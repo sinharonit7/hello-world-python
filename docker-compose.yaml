@@ -1,0 +1,11 @@
+version: '3.4'
+services:
+  hello_world:
+    image: 'helloworld_ron'
+    build: 
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - '5000:5000'
+    environment:
+      - FLASK_APP=app.py
