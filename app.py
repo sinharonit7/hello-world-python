@@ -1,11 +1,7 @@
 from flask import Flask 
 app = Flask(__name__) 
 
-@app.route('/') 
-def hello_world(): 
-    return 'Hello, from Docker!'
-
-@app.route('/python')  # Add this route for /python
+@app.route('/python') 
 def python_route(): 
     return 'Hello, Python World!'
 
